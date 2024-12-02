@@ -1,0 +1,31 @@
+The system is: Linux - sh: 0: getcwd() failed: No such file or directory
+5.15.0-107-generic - sh: 0: getcwd() failed: No such file or directory
+x86_64
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_76255/fast && /usr/bin/make -f CMakeFiles/cmTC_76255.dir/build.make CMakeFiles/cmTC_76255.dir/build
+make[1]: Entering directory '/home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_76255.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_76255.dir/testCXXCompiler.cxx.o -c /home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_76255
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76255.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_76255.dir/testCXXCompiler.cxx.o  -o cmTC_76255 
+make[1]: Leaving directory '/home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07a4d/fast && /usr/bin/make -f CMakeFiles/cmTC_07a4d.dir/build.make CMakeFiles/cmTC_07a4d.dir/build
+make[1]: Entering directory '/home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_07a4d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_07a4d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_07a4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07a4d.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_07a4d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_07a4d 
+make[1]: Leaving directory '/home/it-cpu-44/Documents/RESTFUL_API/CRestfullAPI/restbed/CMakeFiles/CMakeTmp'
+
+
+

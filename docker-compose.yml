@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ./Fast_api
+      dockerfile: Dockerfile
+    container_name: fastapi
+    ports:
+      - "7000:7000"
+    networks:
+      - api-network
+
+  flaskapi:
+    build:
+      context: ./Flask_api
+      dockerfile: Dockerfile
+    container_name: flaskapi
+    ports:
+      - "5000:5000"
+    networks:
+      - api-network
+
+  flaskrestfulapi:
+    build:
+      context: ./Flaskrestful_api
+      dockerfile: Dockerfile
+    container_name: flaskrestfulapi
+    ports:
+      - "5002:5002"
+    networks:
+      - api-network
+      
+  
+  fastclient:
+    build:
+      context: ./Clients/Fast_client
+      dockerfile: Dockerfile
+    container_name: fastclient
+    depends_on:
+      - fastapi
+    networks:
+      - api-network
+
+  flaskclient:
+    build:
+      context: ./Clients/Flask_Client
+      dockerfile: Dockerfile
+    container_name: flaskclient
+    depends_on:
+      - flaskapi
+    networks:
+      - api-network
+  flaskrestfulclient:
+    build:
+      context: ./Clients/Flask_Restful_Client
+      dockerfile: Dockerfile
+    container_name: flaskrestfulclient
+    depends_on:
+      - flaskrestfulapi
+    networks:
+      - api-network
+  
+
+networks:
+  api-network:
+    driver: bridge
+
